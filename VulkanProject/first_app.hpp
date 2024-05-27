@@ -9,7 +9,7 @@ namespace lve {
 	public:
 		static constexpr int WIDHT = 800;
 		static constexpr int HEIGHT = 600;
-
+		
 		void run();
 
 	};
