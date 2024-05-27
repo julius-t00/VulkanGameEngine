@@ -16,7 +16,7 @@ namespace lve {
 		file.seekg(0);
 		file.read(characterBuffer.data(), fileSize);
 		file.close();
-
+		return characterBuffer;
 	}
 	void lvePipeline::create_graphicsPipeline(const std::string& vertFilePath, const std::string& fragFilePath) {
 		auto vertCode = ReadFile(vertFilePath);
@@ -27,7 +27,7 @@ namespace lve {
 
 	}
 
-	lvePipeline::lvePipeline(const std::string& vertFilePath, const std::string& fragFilePath) {
+	lvePipeline::lvePipeline(const std::string vertFilePath, const std::string fragFilePath) {
 		create_graphicsPipeline(vertFilePath, fragFilePath);
 	}
 }

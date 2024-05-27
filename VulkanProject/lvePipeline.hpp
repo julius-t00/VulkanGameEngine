@@ -13,7 +13,7 @@ namespace lve {
 
 	public:
 
-		lvePipeline(const std::string& vertFilePath, const std::string& fragFilePath);
+		lvePipeline(const std::string vertFilePath, const std::string fragFilePath);
 
 	};
 }
