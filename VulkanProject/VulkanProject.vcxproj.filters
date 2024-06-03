@@ -27,6 +27,9 @@
     <ClCompile Include="lvePipeline.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\..\..\Users\noobs\Downloads\.cpp\my_engine_device.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="lilVulkanWindow.hpp">
@@ -36,6 +39,9 @@
       <Filter>Header Files</Filter>
     </ClInclude>
     <ClInclude Include="lvePipeline.hpp">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\..\Users\noobs\Downloads\.cpp\my_engine_device.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>

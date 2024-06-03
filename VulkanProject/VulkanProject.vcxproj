@@ -131,12 +131,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\Users\noobs\Downloads\.cpp\my_engine_device.cpp" />
     <ClCompile Include="first_app.cpp" />
     <ClCompile Include="lilVulkanWindow.cpp" />
     <ClCompile Include="main.cpp" />
     <ClCompile Include="lvePipeline.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\..\Users\noobs\Downloads\.cpp\my_engine_device.hpp" />
     <ClInclude Include="first_app.hpp" />
     <ClInclude Include="lilVulkanWindow.hpp" />
     <ClInclude Include="lvePipeline.hpp" />
