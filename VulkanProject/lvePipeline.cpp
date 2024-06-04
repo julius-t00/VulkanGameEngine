@@ -18,12 +18,12 @@ namespace lve {
 		file.close();
 		return characterBuffer;
 	}
-	void lvePipeline::create_graphicsPipeline(const std::string& vertFilePath, const std::string& fragFilePath) {
+	void lvePipeline::create_graphicsPipeline(const std::string& vertFilePath, const std::string& fragFilePath,const pipelineConfigInfo& configInfo) {
 		auto vertCode = ReadFile(vertFilePath);
 		auto fragCode = ReadFile(fragFilePath);
 
-		std::cout << "Vertex shader file size: " << vertCode.size() << '\n';
-		std::cout << "Frag shader file size: " << fragCode.size() << '\n';
+		std::cout << "Vertex shader code size: " << vertCode.size() << '\n';
+		std::cout << "Frag shader code size: " << fragCode.size() << '\n';
 
 	}
 
