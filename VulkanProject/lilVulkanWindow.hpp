@@ -20,6 +20,7 @@ namespace lve {
 		LveWindow(int w, int h, std::string n);
 		~LveWindow();
 		bool shouldClose() { return glfwWindowShouldClose(window); }
+		void createWindowSurface(VkInstance Instance, VkSurfaceKHR* Surface);
 
 		LveWindow(const LveWindow&) = delete;
 		LveWindow& operator = (const LveWindow&) = delete;

@@ -1,5 +1,8 @@
 #include "lilVulkanWindow.hpp"
 
+//std
+#include <stdexcept>
+
 namespace lve {
 	LveWindow::LveWindow(int w, int h, std::string n) :width(w), height(h), windowName(n) {
 		initWindow();
@@ -9,6 +12,12 @@ namespace lve {
 	LveWindow::~LveWindow() {
 		glfwDestroyWindow(window);
 		glfwTerminate();
+	}
+
+	void LveWindow::createWindowSurface(VkInstance instance, VkSurfaceKHR* surface) {
+		if (glfwCreateWindowSurface(instance, window, nullptr, surface) != VK_SUCCESS) {
+			throw std::runtime_error("Failed to create window surface! ");
+		}
 	}
 
 	void LveWindow::initWindow() {
