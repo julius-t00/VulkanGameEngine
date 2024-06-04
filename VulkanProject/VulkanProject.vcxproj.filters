@@ -27,7 +27,7 @@
     <ClCompile Include="lvePipeline.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\..\..\Users\noobs\Downloads\.cpp\my_engine_device.cpp">
+    <ClCompile Include="my_engine_device.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
@@ -41,7 +41,7 @@
     <ClInclude Include="lvePipeline.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\..\..\Users\noobs\Downloads\.cpp\my_engine_device.hpp">
+    <ClInclude Include="my_engine_device.hpp">
       <Filter>Header Files</Filter>
     </ClInclude>
   </ItemGroup>
