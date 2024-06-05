@@ -27,7 +27,7 @@ namespace lve {
 
 	}
 
-	lvePipeline::lvePipeline(const std::string vertFilePath, const std::string fragFilePath) {
-		create_graphicsPipeline(vertFilePath, fragFilePath);
+	lvePipeline::lvePipeline(LveDevice& device, const std::string vertFilePath, const std::string fragFilePath, const pipelineConfigInfo& configInfo) : lveDevice(device) {
+		create_graphicsPipeline(vertFilePath, fragFilePath,configInfo); 
 	}
 }
